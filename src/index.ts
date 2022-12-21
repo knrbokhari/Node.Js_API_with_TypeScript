@@ -7,7 +7,7 @@ import PostController from '@/resources/post/post.controller';
 validateEnv();
 
 const app = new App(
-    [new PostController],
+    [new PostController()],
     Number(process.env.PORT)
 );
 
